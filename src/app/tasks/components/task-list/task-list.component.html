@@ -1,0 +1,7 @@
+10.	Replace the content of TaskListComponent template. Use the following snippet of HTML:
+<app-task 
+  *ngFor="let task of tasks | async" 
+  [task]="task"
+  (completeTask)="onCompleteTask($event)"
+  (editTask)="onEditTask($event)">
+</app-task>
